@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="notification">
+        <div class="card">
+
+            <div class="card-content">
+
+                <form [formGroup]="FormLogin" (ngSubmit)="TempAuth()">
+                    <div class="field">
+                        <label class="label">Correo Electronico</label>
+                        <div class="control ">
+                            <input class="input is-info" type="email" placeholder="Email input" formControlName="InputEmail">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Contraseña</label>
+                        <div class="control ">
+                            <input class="input is-info" type="password" placeholder="Email input" formControlName="InputPassword">
+                        </div>
+                    </div>
+    
+                    <div class="block">
+                        <button type="submit" class="button is-danger">Iniciar Sesion</button>
+    
+                    </div>
+                </form>
+               
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="columns">
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="/assets/MarcasIconos/Honda.png" alt="Image">
+                </figure>
+            </div>
+            <div class="card-content">
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="/assets/MarcasIconos/Subaru.png" alt="Image">
+                </figure>
+            </div>
+            <div class="card-content">
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="/assets/MarcasIconos/Suzuki.png" alt="Image">
+                </figure>
+            </div>
+            <div class="card-content">
+
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="/assets/MarcasIconos/Toyota.png" alt="Image">
+                </figure>
+            </div>
+            <div class="card-content">
+
+            </div>
+        </div>
+    </div>
+</div>
