@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 //js for modal trigger
-declare function ModalTrigger():any;
+declare function ModalTrigger(): any;
 
 @Component({
   selector: 'app-clientes',
@@ -12,9 +12,10 @@ export class ClientesComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit() {
 
-    ModalTrigger();
+
   }
 
 }

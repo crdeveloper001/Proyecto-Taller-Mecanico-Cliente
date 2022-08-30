@@ -1,14 +1,144 @@
-<div class="container is-fullwidth">
-    <div class="tabs is-toggle is-toggle-rounded is-centered">
-        <ul>
-            <li><a>MI PERFIL</a></li>
-            <li><a routerLink="/Clientes">CLIENTES</a></li>
-            <li><a routerLink="/Vehiculos">VEHICULOS</a></li>
-            <li><a>DIAGNOSTICOS</a></li>
-            <li><a>COTIZACIONES</a></li>
-            <li><a>LISTA DE TAREAS</a></li>
-            <li><a>ADMINISTRACION DEL SISTEMA</a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="StateMenu">
+
+                <li class="nav-item">
+                    <a class="btn btn-success nav-link text-white" href="#">Ver mi Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Vehiculos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Diagnosticos Actuales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Provedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Cotizaciones de Clientes</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Opciones del sistema
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<br>
+
+
+
+<h1 class="text-center">BIENVENIDO AL TALLER CHACON</h1>
+<br>
+
+<div class="card text-white bg-dark">
+    <div class="card-header">Menu Principal</div>
+    <div class="card-body">
+
+        <p>
+            ESTE ES EL MENU PRINCIPAL POR DEFECTO! PARA SIMPLIFICAR LA NAVEGACION PUEDES HABILITAR LA BARRA DE
+            NAVEGACION PRESIONANDO
+            ACA---> <button class="btn btn-outline-warning" (click)="ChangeStateMenu()">{{ButtonStateChange}}</button>
+        </p>
+        <div class="card-group ">
+            <div class="card ">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">PERFIL PERSONAL</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">CLIENTES</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">VEHICULOS</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card-group ">
+            <div class="card ">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">DIAGNOSTICOS ACTUALES</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">COTIZACIONES</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">PROVEDORES</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card-group ">
+            <div class="card ">
+
+                <div class="card-body">
+                    <h4 class="card-title text-dark text-center">INVENTARIO DEL TALLER</h4>
+                    <div style="padding: 1px; background-color: red"></div>
+                    <br>
+                    <button class="btn btn-success mx-auto d-block">Ingresar</button>
+
+                </div>
+            </div>
+            
+         
+        </div>
     </div>
 </div>
-<br>

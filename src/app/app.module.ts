@@ -11,6 +11,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ServiciosActualesComponent } from './Components/servicios-actuales/servicios-actuales.component';
+import { PerfilComponent } from './Components/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ServiciosActualesComponent } from './Components/servicios-actuales/serv
     LoginComponent,
     FooterComponent,
     ServiciosActualesComponent,
+    PerfilComponent,
   
   ],
   imports: [
