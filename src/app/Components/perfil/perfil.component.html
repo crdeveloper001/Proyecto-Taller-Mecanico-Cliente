@@ -1,1 +1,93 @@
-<p>perfil works!</p>
+<app-navegacion></app-navegacion>
+<div class="container-fluid">
+
+    <div class="card border-dark">
+        <img class="card-img-top" src="holder.js/100px180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title text-left">TARJETA DE INFORMACION BASICA</h4>
+            <hr>
+            <div class="container" *ngIf="StateEditProfileCard">
+                <div class="card-group">
+                    <div class="card ">
+                        <img class="img-fluid mx-auto" src="../../../assets/Iconos App/user.png" alt="Card image cap"
+                            width="20%">
+                            <hr>
+                        <button class="btn btn-outline-success ml-1">Guardar Informacion</button>
+                        <br>
+                        <button class="btn btn-outline-danger" (click)="CloseEditView()">Cancelar</button>
+                        <div class="card-body">
+
+                            <div class="row ">
+                                <div class="col ">
+                                    <hr>
+                                    <h2 class="text-center">Nombre: </h2>
+                                    <input type="text" class="form-control " value="Claudio">
+                                    <br>
+                                    <h2 class="text-center">Apellidos: </h2>
+                                    <input type="text" class="form-control " value="Gonzalez Hernandez">
+                                    <br>
+                                    <h2 class="text-center">Telefono: </h2>
+                                    <input type="tel" class="form-control " value="85858585">
+                                    <br>
+                                    <h2 class="text-center">Correo Electronico: </h2>
+                                    <input type="email" class="form-control " value="correo@gmail.com">
+                                    <br>
+                                    <h2 class="text-center">Cargo Actual: </h2>
+                                    <input type="text" class="form-control " value="Mecanico General">
+                                  
+                                    <h2 class="text-center">Rol Actual: </h2>
+                                    <input type="text" class="form-control " value="Usuario" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container" *ngIf="StateProfileViewOnly">
+                <div class="card-group">
+                    <div class="card ">
+                        <img class="img-fluid mx-auto" src="../../../assets/Iconos App/user.png" alt="Card image cap"
+                            width="20%">
+
+
+                        <div class="card-body">
+                            <button class="btn btn-warning" (click)="ShowEditView()">Editar Perfil</button>
+                            <div class="row ">
+                                <div class="col ">
+                                    <hr>
+                                    <h2 class="text-center">Nombre: </h2>
+                                    <input type="text" class="form-control " value="Claudio" disabled>
+                                    <br>
+                                    <h2 class="text-center">Apellidos: </h2>
+                                    <input type="text" class="form-control " value="Gonzalez Hernandez" disabled>
+                                    <br>
+                                    <h2 class="text-center">Telefono: </h2>
+                                    <input type="tel" class="form-control " value="85858585" disabled>
+                                    <br>
+                                    <h2 class="text-center">Correo Electronico: </h2>
+                                    <input type="email" class="form-control " value="correo@gmail.com" disabled>
+                                    <br>
+                                    <h2 class="text-center">Cargo Actual: </h2>
+                                    <input type="text" class="form-control " value="Mecanico General" disabled>
+                                    <h2 class="text-center">Rol Actual: </h2>
+                                    <input type="text" class="form-control " value="Usuario" disabled>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

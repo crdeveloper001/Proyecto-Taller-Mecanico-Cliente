@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ServiciosActualesComponent } from './Components/servicios-actuales/servicios-actuales.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
+import { NavegacionComponent } from './Components/navegacion/navegacion.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PerfilComponent } from './Components/perfil/perfil.component';
     FooterComponent,
     ServiciosActualesComponent,
     PerfilComponent,
+    NavegacionComponent,
   
   ],
   imports: [

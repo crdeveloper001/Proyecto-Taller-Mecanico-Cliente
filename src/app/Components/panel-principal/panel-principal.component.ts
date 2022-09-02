@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-panel-principal',
@@ -8,33 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanelPrincipalComponent implements OnInit {
 
-  StateMenu: boolean = false;
-  ButtonStateChange: string = "habilitar navegacion";
-
-  constructor() { }
+  constructor(private router:Router) { }
 
 
 
-  ChangeStateMenu() {
+  //navigation
+  async ViewPersonlProfile(){
 
-    switch (this.StateMenu) {
-
-      case true:
-        this.StateMenu = false;
-        this.ButtonStateChange = "HABILITAR NAVEGACION"
-        break;
-
-      case false:
-        this.StateMenu = true;
-        this.ButtonStateChange = "DESHABILITAR NAVEGACION"
-        break;
-
-      default:
-        this.StateMenu = true;
-    }
-
-
+    this.router.navigateByUrl('/Perfil-Personal')
   }
+
 
   ngOnInit(): void {
   }
