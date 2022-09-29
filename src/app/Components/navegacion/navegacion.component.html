@@ -7,40 +7,41 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="StateMenu">
-
                 <li class="nav-item">
-                    <a class="btn btn-success nav-link text-white" href="#">Ver mi Perfil</a>
+                    <a class="btn btn-success nav-link text-white" routerLink="/Panel-Principal">Ver mi Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Clientes</a>
+                    <a class=" nav-link text-white" routerLink="/Panel-Principal" >Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/Clientes">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Vehiculos</a>
+                    <a class="nav-link text-white" routerLink="/Vehiculos">Vehiculos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Diagnosticos Actuales</a>
+                    <a class="nav-link text-white" routerLink="/Diagnosticos">Diagnosticos Actuales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Provedores</a>
+                    <a class="nav-link text-white" routerLink="/Proveedores">Provedores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Cotizaciones de Clientes</a>
+                    <a class="nav-link text-white" routerLink="/Cotizaciones">Cotizaciones de Clientes</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Opciones del sistema
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">GESTION DE USUARIOS</a></li>
-                        <li><a class="dropdown-item" href="#">GENERAR REPORTES</a></li>
-                        <li><a class="dropdown-item" href="#">SOLICITAR SOPORTE TECNICO</a></li>
+                        <li><a class="dropdown-item" routerLink="/Panel-Principal">GESTION DE USUARIOS</a></li>
+                        <li><a class="dropdown-item" routerLink="/Panel-Principal">GENERAR REPORTES</a></li>
+                        <li><a class="dropdown-item" routerLink="/Panel-Principal">SOLICITAR SOPORTE TECNICO</a></li>
                        
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
+               
             </ul>
 
         </div>

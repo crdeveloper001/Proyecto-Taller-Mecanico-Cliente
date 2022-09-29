@@ -1,0 +1,134 @@
+<app-navegacion></app-navegacion>
+
+<!--Formulario de registro-->
+<div class="container-fluid" *ngIf="StateViewRegisterForm">
+
+    <form title="Formulario de registro de cliente" (ngSubmit)="SendInfo()">
+
+
+        <div class="row ">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="form-row">
+                        <label>Tipo de Vehiculo</label>
+                        <select name="" id="" class="form-control" required>
+                            <option>--SELECCIONA EL TIPO DE VEHICULO--</option>
+                            <option value="Coupe">Coupe</option>
+                            <option value="Sedan">Sedan</option>
+                            <option value="Suv">Suv</option>
+                            <option value="Pick Up">Pick Up</option>
+                            <option value="4X4">4X4</option>
+                            <option value="Semi Deportivo">Semi Deportivo</option>
+                            <option value="Deportivo">Deportivo</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control"  placeholder="nombre del cliente" required>
+                        <label for="">Apellidos</label>
+                        <input type="text" class="form-control"  placeholder="apellidos del cliente" required>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="form-row">
+                        <label for="">Correo Electronico</label>
+                        <input type="email" class="form-control"  placeholder="usuario@dominio.com" required>
+                        <label for="">Telefono</label>
+                        <input type="tel" class="form-control"  placeholder="nombre del cliente" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="form-row">
+                        <label for="">Tipo de Vehiculo</label>
+                       
+                        <label for="">Marca</label>
+                        <input type="text" class="form-control"  placeholder="nombre del cliente" required>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-outline-success">Agregar Cliente</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<hr>
+
+
+<!--Tabla de registros de cliente-->
+<div class="container-fluid">
+    <button class="btn btn-success" (click)="ViewForm()">Registrar Nuevo Cliente</button>
+    <br>
+    <br>
+    <div class="card border-dark">
+
+        <div class="card-body">
+            <h4 class="card-title">Clientes</h4>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-responsive">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th>Vehiculo</th>
+                            <th>Marca</th>
+                            <th>Estado</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">123456789</td>
+                            <td>Claudio</td>
+                            <td>Gonzalez Hernandez</td>
+                            <td>claudio@gmail.com</td>
+                            <td>74747474</td>
+                            <td>Sedan</td>
+                            <td>Toyota Corrolla</td>
+
+                            <td>Registrado</td>
+                            <td><button class="btn btn-outline-warning">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">123456789</td>
+                            <td>Claudio</td>
+                            <td>Gonzalez Hernandez</td>
+                            <td>claudio@gmail.com</td>
+                            <td>74747474</td>
+                            <td>Sedan</td>
+                            <td>Toyota Corrolla</td>
+
+                            <td>Registrado</td>
+                            <td><button class="btn btn-outline-warning">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">123456789</td>
+                            <td>Claudio</td>
+                            <td>Gonzalez Hernandez</td>
+                            <td>claudio@gmail.com</td>
+                            <td>74747474</td>
+                            <td>Sedan</td>
+                            <td>Toyota Corrolla</td>
+
+                            <td>Registrado</td>
+                            <td><button class="btn btn-outline-warning" >Editar</button></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

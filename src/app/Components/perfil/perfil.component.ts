@@ -13,18 +13,15 @@ export class PerfilComponent implements OnInit {
 
   constructor() { }
 
-
   async ShowEditView() {
 
     switch (this.StateEditProfileCard) {
-
       case false:
         this.StateEditProfileCard = true;
         this.StateProfileViewOnly = false;
         break;
       case true:
         this.StateEditProfileCard = false;
-
         break;
       default:
         this.StateEditProfileCard = false;
@@ -39,7 +36,6 @@ export class PerfilComponent implements OnInit {
         this.StateEditProfileCard = false;
         this.StateProfileViewOnly = true;
         break;
-
     }
 
   }

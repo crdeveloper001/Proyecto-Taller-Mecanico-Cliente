@@ -13,6 +13,10 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ServiciosActualesComponent } from './Components/servicios-actuales/servicios-actuales.component';
 import { PerfilComponent } from './Components/perfil/perfil.component';
 import { NavegacionComponent } from './Components/navegacion/navegacion.component';
+import { DiagnosticosComponent } from './Components/diagnosticos/diagnosticos.component';
+import { ProveedoresComponent } from './Components/proveedores/proveedores.component';
+import { InventarioComponent } from './Components/inventario/inventario.component';
+import { UsuariosComponent } from './Components/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { NavegacionComponent } from './Components/navegacion/navegacion.componen
     ServiciosActualesComponent,
     PerfilComponent,
     NavegacionComponent,
+    DiagnosticosComponent,
+    ProveedoresComponent,
+    InventarioComponent,
+    UsuariosComponent,
   
   ],
   imports: [

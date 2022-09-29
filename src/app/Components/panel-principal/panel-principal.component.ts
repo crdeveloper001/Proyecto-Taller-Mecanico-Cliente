@@ -9,15 +9,33 @@ import { Router } from '@angular/router';
 })
 export class PanelPrincipalComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
 
 
   //navigation
-  async ViewPersonlProfile(){
-
+  async ViewPerfilPersonal() {
     this.router.navigateByUrl('/Perfil-Personal')
   }
+  async ViewClientes() {
+    this.router.navigateByUrl('/Clientes')
+  }
+  async ViewVehiculos(){
+    this.router.navigateByUrl('/Vehiculos')
+  }
+  async ViewDiagnosticos() {
+    this.router.navigateByUrl('/Diagnosticos')
+  }
+  async ViewProveedores() {
+    this.router.navigateByUrl('/Proveedores')
+  }
+  async ViewCotizaciones(){
+    this.router.navigateByUrl('/Cotizacioness')
+  }
+  async ViewInventario(){
+    this.router.navigateByUrl('/Inventario')
+  }
+ 
 
 
   ngOnInit(): void {

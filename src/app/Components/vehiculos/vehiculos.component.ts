@@ -7,7 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VehiculosComponent implements OnInit {
 
+  StateViewRegisterForm:boolean = false;
   constructor() { }
+
+  async ViewForm(){
+
+    switch(this.StateViewRegisterForm){
+      default:
+        this.StateViewRegisterForm = false;
+        break;
+      case false:
+        this.StateViewRegisterForm = true;
+        break;
+      
+    }
+  }
+
+  async SendInfo(){
+    alert("registrado")
+  }
 
   ngOnInit(): void {
   }
