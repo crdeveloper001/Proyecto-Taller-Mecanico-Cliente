@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +17,7 @@ import { DiagnosticosComponent } from './Components/diagnosticos/diagnosticos.co
 import { ProveedoresComponent } from './Components/proveedores/proveedores.component';
 import { InventarioComponent } from './Components/inventario/inventario.component';
 import { UsuariosComponent } from './Components/usuarios/usuarios.component';
+import { PaginaPrincipalComponent } from './Components/pagina-principal/pagina-principal.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,16 @@ import { UsuariosComponent } from './Components/usuarios/usuarios.component';
     ProveedoresComponent,
     InventarioComponent,
     UsuariosComponent,
+    PaginaPrincipalComponent,
+    
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
