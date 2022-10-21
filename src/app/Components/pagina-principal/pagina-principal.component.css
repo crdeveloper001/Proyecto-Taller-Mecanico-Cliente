@@ -1,0 +1,9 @@
+.card{
+    border: none;
+}
+#ServiceDescription{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-shadow: 1cm;
+    
+}
