@@ -14,6 +14,7 @@ import { VehiculosComponent } from './Components/vehiculos/vehiculos.component';
 const routes: Routes = [
 
   {path:'Home',component:PaginaPrincipalComponent},
+  {path:'Taller-ERP-Login',component:LoginComponent},
   {path:'Panel-Principal',component:PanelPrincipalComponent},
   {path:'Vehiculos',component:VehiculosComponent},
   {path:'Clientes',component:ClientesComponent},
