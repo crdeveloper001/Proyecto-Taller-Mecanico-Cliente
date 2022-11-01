@@ -1,93 +1,22 @@
-<nav class="navbar navbar-expand-lg bg-primary">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<app-navegacion-pagina-principal></app-navegacion-pagina-principal>
+<div class="container-fluid bg-dark">
+    <div class="card-group ">
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">SERVICIOS</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link active text-white border border-warning" aria-current="page"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACTENOS ACA</a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">FORMULARIO DE CONTACTO</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-
-                                        <div class="form-group">
-                                            <div class="form-row">
-                                                <label for="">NOMBRE</label>
-                                                <input class="form-control" type="text" required placeholder="tu nombre">
-                                                <label for="">APELLIDOS</label>
-                                                <input class="form-control" type="text" required placeholder="tus apellidos">
-                                                <label for="">TELEFONO</label>
-                                                <input class="form-control" type="text" required placeholder="tu telefono">
-                                                <label for="">CORREO</label>
-                                                <input class="form-control" type="email" required placeholder="tu correo">
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <button class="btn btn-outline-primary mx-auto d-block">ENVIAR SOLICITUD</button>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">CERRAR FORMULARIO</button>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="#">RESULTADOS </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" routerLink="/Taller-ERP-Login" routerLinkActive="true"> INGRESO AL TALLER</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
-<br>
-<div class="container-fluid">
-    <div class="card-group">
-
-        <div class="card">
-
+        <div class="card bg-dark">
+            <div class="card-header text-white">ESTE SITIO SE ENCUENTRA EN DESAROLLO, ESTARA DISPONIBLE PROXIMAMENTE</div>
             <div class="card-body">
-                <img class="img-fluid mx-auto d-block" src="/assets/LogoPrincipal.jpg" alt="Card image cap"
+                <img class="img-fluid mx-auto d-block" src="/assets/LogoPrincipal.png" alt="Card image cap"
                     width="400px">
                 <h1 class="card-title">ACERCA DE NOSOTROS</h1>
 
 
                 <br>
-                <h3 class="card-text" id="ServiceDescription">
+                <p class="card-text" id="ServiceDescription">
                     BIENVENIDO A NUESTRO SITIO, ACA ENCONTRARA TODA LA INFORMACION
                     RESPECTIVA SOBRE LOS SERVICIOS DE MECANICA RAPIDA QUE BRINDAMOS CON LOS MAYORES
                     ESTANDARES DE CALIDAD AUTOMOTRIZ PARA QUE SU VEHICULO TENGA UN MAYOR RENDIMIENTO
                     A LARGO PLAZO
-                </h3>
+                </p>
             </div>
         </div>
 
@@ -96,59 +25,45 @@
 
     <h1 class="text-center">ESTAS SON ALGUNAS DE LAS LINEAS QUE MANEJAMOS</h1>
 
-    <div class="row align-items-center">
+    <div class="row">
         <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/toyota.png" alt="Toyota" width="100%"
-                height="450px">
+            <img class="img-fluid" src="/assets/LogoMarcas/toyota.png" alt="Toyota" width="100%" height="auto">
 
         </div>
         <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/honda.png" alt="Toyota" width="100%"
-                height="450px">
+            <img class="img-fluid" src="/assets/LogoMarcas/honda.png" alt="Toyota" width="100%" height="auto">
 
         </div>
         <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/nissan.png" alt="Toyota" width="100%"
-                height="450px">
+            <img class="img-fluid" src="/assets/LogoMarcas/nissan.png" alt="Toyota" width="100%" height="auto">
 
         </div>
         <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/suzuki.png" alt="Toyota" width="100%"
-                height="450px">
+            <img class="img-fluid" src="/assets/LogoMarcas/suzuki.png" alt="Toyota" width="100%" height="auto">
 
         </div>
+        <div class="col">
+            <img class="img-fluid" src="/assets/LogoMarcas/chevrolet.png" alt="Toyota" width="100%" height="auto">
+
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="/assets/LogoMarcas/ford.png" alt="Toyota" width="100%" height="auto">
+
+        </div>
+
     </div>
-    <div class="row align-items-center">
-        <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/chevrolet.png" alt="Toyota" width="100%"
-                height="450px">
-
-        </div>
-        <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/ford.png" alt="Toyota" width="100%"
-                height="450px">
-
-        </div>
-        <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/audi.png" alt="Toyota" width="100%"
-                height="450px">
-
-        </div>
-        <div class="col">
-            <img class="card-img-top img-fluid" src="/assets/LogoMarcas/bmw.png" alt="Toyota" width="100%"
-                height="450px">
-
-        </div>
-    </div>
-
+   
 
 </div>
+
+
+
 
 <footer class="bg-primary text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright:
-      <a class="text-dark" href="https://softengineerclaudio.netlify.app/">CR DEVELOPERS 506</a>
+        © 2022 Copyright:
+        <a class="text-dark" href="https://softengineerclaudio.netlify.app/">CR DEVELOPERS 506</a>
     </div>
     <!-- Copyright -->
-  </footer>
+</footer>

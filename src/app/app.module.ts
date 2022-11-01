@@ -18,6 +18,7 @@ import { ProveedoresComponent } from './Components/proveedores/proveedores.compo
 import { InventarioComponent } from './Components/inventario/inventario.component';
 import { UsuariosComponent } from './Components/usuarios/usuarios.component';
 import { PaginaPrincipalComponent } from './Components/pagina-principal/pagina-principal.component';
+import { NavegacionPaginaPrincipalComponent } from './Components/navegacion-pagina-principal/navegacion-pagina-principal.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PaginaPrincipalComponent } from './Components/pagina-principal/pagina-p
     InventarioComponent,
     UsuariosComponent,
     PaginaPrincipalComponent,
+    NavegacionPaginaPrincipalComponent,
     
   
   ],
